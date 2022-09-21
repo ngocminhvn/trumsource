@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: localhost:3306
--- Thời gian đã tạo: Th9 18, 2022 lúc 01:30 PM
+-- Thời gian đã tạo: Th9 21, 2022 lúc 10:13 AM
 -- Phiên bản máy phục vụ: 10.3.36-MariaDB-cll-lve
 -- Phiên bản PHP: 7.4.30
 
@@ -131,7 +131,13 @@ INSERT INTO `chat_user` (`id`, `buyer`, `message`, `time`) VALUES
 (3802, 'Minhzxh', 'Chào các bạn ', '1663021580'),
 (3803, 'phananhtuan', '.', '1663056902'),
 (3804, 'phananhtuan', '123', '1663056924'),
-(3805, 'trumcodevnnn', 'Chào mấy nhóc ', '1663330647');
+(3805, 'trumcodevnnn', 'Chào mấy nhóc ', '1663330647'),
+(3806, 'trinhngocminh', 'gì', '1663483332'),
+(3808, 'Okok01', 'cd /sdcard/download &amp;&amp; php 11.8.php ', '1663502903'),
+(3809, 'thanhphat', 'up tool đi :vv', '1663566965'),
+(3810, 'gagaga', 'HÚP MẠNH      ', '1663594759'),
+(3811, 'trinhngocminh', '[URL]https://trumsource.com/view-source/86[/URL]', '1663598985'),
+(3812, 'trinhngocminh', 'lấy tool tăng view blogger php ko :v', '1663599120');
 
 -- --------------------------------------------------------
 
@@ -239,7 +245,13 @@ INSERT INTO `code_historys` (`id`, `buyer`, `code`, `time`) VALUES
 (86, '78', '85', '1663465454'),
 (87, '5', '6', '1663470486'),
 (88, '5', '82', '1663470515'),
-(89, '5', '4', '1663470567');
+(89, '5', '4', '1663470567'),
+(90, '86', '82', '1663552188'),
+(91, '92', '5', '1663594802'),
+(92, '81', '85', '1663609573'),
+(93, '93', '85', '1663636515'),
+(94, '93', '85', '1663636536'),
+(95, '5', '85', '1663654563');
 
 -- --------------------------------------------------------
 
@@ -272,7 +284,8 @@ INSERT INTO `code_products` (`id`, `name`, `amount`, `demo`, `thumbnail`, `downl
 (81, 'Template Card v3', '0', '', 'https://i.imgur.com/SD3auql.png', 'https://www.mediafire.com/file/z4bob4hddloq8vp/donate-template.xml/file', '1660445907'),
 (82, 'Template Card v4', '0', '', 'https://i.imgur.com/gx73Fy9.png', 'https://www.mediafire.com/file/asxj3t2hngpis3a/profile-card-template.xml/file', '1660446023'),
 (84, 'Code Clmm VIp', '350000', 'https://i.imgur.com/W4BcRIV.png', 'https://i.imgur.com/W4BcRIV.png', 'https://www.mediafire.com/file/47iqwqqbvvdwttx/clmm.zip/file', '1663428354'),
-(85, 'Code Clmm Free', '0', 'https://i.imgur.com/cYMlGcV.png', 'https://i.imgur.com/cYMlGcV.png', 'https://www.mediafire.com/file/bq7m6tqmfnw1a3o/game_momo_200k.zip/file', '1663428952');
+(85, 'Code Clmm Free', '0', 'https://i.imgur.com/cYMlGcV.png', 'https://i.imgur.com/cYMlGcV.png', 'https://www.mediafire.com/file/bq7m6tqmfnw1a3o/game_momo_200k.zip/file', '1663428952'),
+(86, 'Code Check Scam VIP', '350000', 'https://i.imgur.com/XKtYWfO.png', 'https://i.imgur.com/XKtYWfO.png', 'https://www.mediafire.com/file/0s0g4t4fp8swbwq/falcon.zip/file', '1663598963');
 
 -- --------------------------------------------------------
 
@@ -321,11 +334,11 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `username`, `password`, `money`, `total`, `role`, `token`, `cookie`, `ipaddress`, `time`) VALUES
-(1, 'Trinh Ngoc Minh', 'trinhngocminhads@gmail.com', 'trinhngocminh', '3b38618c761774a1129a9703686d1a4974f81876', '1000', '10000', 'admin', '5l9fnddfu1w5louuo5pk6tyd64p3dhdw', '4063csr7gty8r26ki4u7zegbprjr8p6m', '2001:ee0:46f1:91a0:9d08:70f4:caac:d6c', '1663470294'),
-(2, 'Trinh Ngoc Minh', 'Admin@gmail.com', 'Admin', '4e7afebcfbae000b22c7c85e5560f89a2a0280b4', '0', '0', '0', '0hlo3uyshrlkwjqbsgxfah0pgk9u9kw7', '8zrqeak7ptvzn2wdb6jk4n6gq9cupm4o', '2001:ee0:46f1:91a0:d022:44ad:f600:1c00', '1663336262'),
+(1, 'Trinh Ngoc Minh', 'trinhngocminhads@gmail.com', 'trinhngocminh', '3b38618c761774a1129a9703686d1a4974f81876', '1000', '10000', 'admin', '6m0p4c6cke7tir0mrv0aj6gew5xj6eyt', 'ps5l1hz3o5adb3pagl7haaharb2nyoh6', '14.175.51.223', '1663679336'),
+(2, 'Trinh Ngoc Minh', 'Admin@gmail.com', 'Admin', '4e7afebcfbae000b22c7c85e5560f89a2a0280b4', '0', '0', '0', '0hlo3uyshrlkwjqbsgxfah0pgk9u9kw7', 'bmli38g6wn11r7m0s0sdwf47ue64u6dk', '2001:ee0:46f1:91a0:61a3:8afd:a4d0:c1de', '1663483267'),
 (3, 'Tuấn', 'nhihuynh1812008@gmail.com', 'Tuan30607tt', 'e84fc89a77bb12e5f70905f13c69bd29f9621303', '0', '0', '0', 'xwdxf63jq6k9n5ocdh94g6exqmnvn3h4', 'cb96omcps7ncswfzimbho7uuw6p1oc85', '2402:800:62a6:f23e:f514:5073:c7e0:d8b6', '1661419660'),
 (4, 'Nguyen Dinh Bao', 'contactme.vhs@gmail.com', 'ndbpro116', '3acd0be86de7dcccdbf91b20f94a68cea535922d', '0', '0', '0', '1qzfst11mtj4kp1tp72cougdw5te1v7x', 'vyfeahepdz4oluipuim5s36hp3eqtdhx', '2402:800:621f:53e2:35cd:dbcb:1e33:4365', '1663472931'),
-(5, 'Trần Tùng Dương ', 'tungduong1231t@gmail.com', 'tungduong1806', 'f87c083d897cdf826a10528e857cd6355e0c661f', '0', '0', '0', '2legf8n7o3tz6sic4ro4aqmug4o3fda6', 'wk7ur63r8n7r3iwhahh5f5l5zr1utv11', '171.236.4.19', '1663455770'),
+(5, 'Trần Tùng Dương ', 'tungduong1231t@gmail.com', 'tungduong1806', 'f87c083d897cdf826a10528e857cd6355e0c661f', '0', '0', '0', '2legf8n7o3tz6sic4ro4aqmug4o3fda6', 'z8d672tqb5t4h2gw433a4340yb8v3r87', '171.236.4.19', '1663654527'),
 (6, 'register.php', 'tiendepttai247@gmail.com', 'trumcodevnnn', '767020fa7b73428406fac3115a177074f197e8fd', '0', '0', '0', 'zu3w61fzu9fc0jeg88sly70obnrz1n9c', 'p06xrfojvsufzt5qlwo17qsp90jxjsyc', '14.187.153.46', '1663330556'),
 (7, 'doan the bao long', 'longdz02091@gmail.com', 'doanthebaolong', '4ed85a6c19ecf01fd503ba2892392cc8186a80db', '0', '0', '0', 'q003vdnxy0ashrz0x8nk6vhy8sf59dmk', '8zi1kmewnxf759951frsoapos88cadgq', '2001:ee0:4c7c:4dc0:58ba:3949:d0b1:22d3', '1662829917'),
 (8, 'Nguyen', 'neko12vn@gmail.com', 'mnbdzvcl', '015b7a905f174b0ca05193ae3d02a999399f5ab8', '0', '0', '0', '2jbkyesprgrh6m228asfdyoic048svir', 'i5vg40pnr87rt49yry1nbts23psnqc8d', '2402:800:621f:5751:282b:7aee:6eb7:4ba8', '1662233558'),
@@ -379,17 +392,17 @@ INSERT INTO `user` (`id`, `name`, `email`, `username`, `password`, `money`, `tot
 (63, 'sdgauagsds', 'iamnguyenthaitrung@gmail.com', 'gdsiuasgduagsdkj548d748s4d', '66faa60462eaefad75c94fbea98d0cb1b6d049c4', '0', '0', '0', 'eoqaa482m9lpw4afsen56vhr3fqpdx1a', 'uw12h7cuv6bk9xwtws9csc51gb181l14', '27.64.197.247', '1662371570'),
 (64, 'Huỳnh Ngân', 'ngancute3000@gmail.com', 'ngancute3000', '0f5bc3fdf1f48db7b0067d1d33d7249a7c927b2a', '0', '0', '0', 'cw93ljgx322sli28xel7n17v2ejsiy1t', 'npt0mzynsh8o2s911m097bu94bza5c68', '2405:4803:c820:d100:719e:3226:9185:bf3', '1662374934'),
 (65, 'hhhhhh', 'bachviet0906@gmail.com', 'bach23', '472dc7731656048bd8f40b5391245e0f9aa97dfb', '0', '0', '0', 'hiefzew4bo8sxf2f94tho4dfu7y9ax8u', 'q7k09yi0cfu9kd4ue2hyjr63bszjmoyf', '2405:4800:75c6:10c5:84d7:2016:2e0:aa7d', '1662418978'),
-(66, 'phsn â aa', 'tuancat2k5@gmail.com', 'phananhtuan', '8b0a49a461d9faf37e755515afc5d3337a9c2331', '0', '0', '0', '9v1ry0pgzx2hnocs58r4rxqwz60kzf51', '00e3xatwb6st750zq71ycbrffcuf79ot', '2001:ee0:4bb4:2510:6041:be7d:d98a:e7fa', '1662465303'),
+(66, 'phsn â aa', 'tuancat2k5@gmail.com', 'phananhtuan', '8b0a49a461d9faf37e755515afc5d3337a9c2331', '0', '0', '0', '9v1ry0pgzx2hnocs58r4rxqwz60kzf51', 'rj0o38cy9gov4rye0nhsqor1e23mqbky', '2001:ee0:4bb4:530:c98c:1faf:a731:76af', '1663487779'),
 (67, 'gggggg', 'contacggggt@detonight.ml', 'Detoz', '88ea39439e74fa27c09a4fc0bc8ebe6d00978392', '0', '0', '0', 'ipccyaf95ssb7hcfm3x3eufau874nz7e', 'amoef7w3ovivaz9sl9pbt0db0n7dwk3b', '2402:800:6310:975e:69d9:e8c3:116d:2f4a', '1662473311'),
 (68, 'Le Gia bao', 'Quynhanh220066@gmail.com', 'thangthan1508', 'fe9b1dc305e7d2a1b752c24e1bdf99c152487223', '0', '0', '0', 'vvx7vz0a8uyjgm6u71aqnqy4ij6wewlg', 'fc8b990suec6h78er36s27a1kpr6vin7', '2402:800:6390:7fab:c0cd:a3b:33b4:332f', '1662479115'),
 (69, 'vo minh thái', 'vominhthai@gmail.com', 'vominhthai', '7e7db8bcd93d74d38d45d276271c1643ca200fb1', '0', '0', '0', 'kpvwnyedn0hnuxy4pxrprdc7aiudr7mo', 'n8amnhuhoultmc4rpwd0rnyn5h3txd74', '113.182.254.224', '1662480808'),
 (70, 'Nguyen Van An', 'l3lchipp@gmail.com', 'chip2502', 'd12702432d35e1d5d95ed19793b80eb8fa676f81', '0', '0', '0', 'w6b9ne7rcbyhdhrfk7vh0tzkpt3gdpa1', 'ed932jigzypv289ppjcn7obbed1e7aaa', '14.232.105.88', '1662556449'),
 (71, 'Lương Quang Linh', 'bowyyt2003@gmail.com', 'bowy2003s', '82bc7c02ae3f972655ec8fa95b5a41020f4c211f', '0', '0', '0', 'yy7pzg8ixkf4z2if0ab8thvo8rnvoq6t', 'xo9arde4vte9d5mpi8p5vrrnrpxsm0is', '2402:800:620f:3503:25c6:311b:21a1:b9a', '1662814989'),
 (72, 'dang anh tu', 'tu75324@gmail.com', 'anhtugood', '7c4a8d09ca3762af61e59520943dc26494f8941b', '0', '0', '0', 'eyqin496vqo3x223te17dnlvmc3pz00o', 'ugbk3rsay707ccv3ic9pybir17hflj4b', '113.176.62.229', '1662835541'),
-(73, 'lê đức hoàng phúc', 'checkmmo.net@gmail.com', 'phuc111', 'f982ffc8ad2aa992334dc23deb55c2da4ad722e7', '0', '0', '0', 'jl2r0jwoh1adug5dbof1htiakfxc610v', 'v021lqzbjh5b73f6u80m5x0hmd7l2f8x', '2401:d800:6f1:fa30:91f3:ddfe:4fc8:d6e5', '1663336188'),
+(73, 'lê đức hoàng phúc', 'checkmmo.net@gmail.com', 'phuc111', 'f982ffc8ad2aa992334dc23deb55c2da4ad722e7', '0', '0', '0', 'jl2r0jwoh1adug5dbof1htiakfxc610v', 'zvvjn56azsola4gw08u5zbpmuroojqq2', '112.197.72.185', '1663671910'),
 (74, 'ngvihu', 'xlohuyolx@gmail.com', 'huii9999', '7c4a8d09ca3762af61e59520943dc26494f8941b', '0', '0', '0', '35l9xf5omhaahqyc0bpjpw6l8azesyrd', '8gpf8r7zodqvq2faya1y707lvunpth2a', '2405:4802:113:2610:34de:d123:128c:494c', '1662961942'),
 (75, 'fgdg123213', 'dfgfdgfdg@cxZxca.com', 'dgdfgfd', 'fca110aef4640df616c8bc076baf72d2a6fd7ff4', '0', '0', '0', 'mb0ikw0z8hyv900vxdo1dtf67aw4jkcv', 'g36n8ehendyhnjya6tzuhtim2k880s7k', '2001:ee0:46da:c560:5d64:d7b2:28f0:7069', '1662966385'),
-(76, 'dứdsdsd', 'Phongdz10s@gmail.com', 'Phongdz10s', '5388aae5daa116d89357af668a6dbee397f39a1f', '0', '0', '0', 'c9lrc0d7l7mtxsnmhfhec6s5io20sv2y', '1cj4u65y2dt6t26261uqyrcwlxtqe6ox', '123.19.183.206', '1662982363'),
+(76, 'dứdsdsd', 'Phongdz10s@gmail.com', 'Phongdz10s', '5388aae5daa116d89357af668a6dbee397f39a1f', '0', '0', '0', 'c9lrc0d7l7mtxsnmhfhec6s5io20sv2y', '6r40tmjpcstfs6oi027nt33zratn17b0', '123.19.183.206', '1663591451'),
 (77, 'Beladuy', 'ntch4722@gmail.com', 'Minhzxh', 'efc950916199f376e633269b65e65c0be9d63412', '0', '0', '0', 'joxqvw7x7mqxz61atq4pekanl8b3er3i', 'wy1tnl00chmn9oy460eg77bwvb706j74', '2001:ee0:5323:1c80:59c8:be9f:444c:8c46', '1663021557'),
 (78, 'Cao Minh Đức', 'adminduc@gmail.com', 'duc123', '4bb85e098d104f88629233c67d11e3c40864d8d5', '0', '0', '0', '6cvffsnolxwncb3ucd8vuelsd8nxlten', 'fcyrrzpfaqw7ciu12iouljqfhdhf6afb', '2402:800:6185:7aed:d46a:b2d8:3f33:33be', '1663070635'),
 (79, 'Trọng Tấn', 'Trantotrongtan@gmail.com', 'TrumBuLoz', '65c695a459d3a93f71c734f59f61ba020ab20e4e', '0', '0', '0', '1vh3wiqw919x4yf4tkjw1a9zbwynv5ta', 'd839arr6pp8n1g48vn1f1me9na3yh12g', '2402:800:629f:7d88:6105:829c:4d67:4871', '1663142093'),
@@ -400,7 +413,15 @@ INSERT INTO `user` (`id`, `name`, `email`, `username`, `password`, `money`, `tot
 (84, 'Trương Mạnh Cường ', 'ct5652770@gmail.com', 'truongcuong286 ', '243edb6c102b87531c264f820439a11c294ee3ff', '0', '0', '0', 'f4neu00s9ueqr1mzprh07tm7eum8wglq', 'm7m6alo3nnz86zfkubiqm3djikpjjqtp', '2001:ee0:4d15:1750:25bb:4f12:2bc2:7904', '1663341458'),
 (85, 'Nguyễn Triệu Phúc', '123123@m.com', 'Phucadmin', '601f1889667efaebb33b8c12572835da3f027f78', '0', '0', '0', 'bfz9wd6xi1yda7h9nchqgn7ssa9jqhlg', 'ihcmgikpud6a1xez4qvtjme5t738gc0d', '125.212.159.8', '1663390075'),
 (86, 'Lê Xuân Công ', 'devcong.vn@gmail.com', 'lexuancong', 'ec071df25e6952f7db55917d6b85ea2494ac70ec', '0', '0', '0', 'pfzutkpxp5hmcb5mnpmzjbqix793dhvp', 'ylyw3pszsgg7xk9vzve077ttjozlev30', '42.118.119.9', '1663406856'),
-(87, 'đặng long khánh', 'khanhhvjp20092@gmail.com', 'dlkkk', '538672e50d704e368ac070cbb4fb3ee98aadb2c4', '0', '0', '0', 'dk2qpj1eenirdt07ifuvqzh63q2rdfyh', '58q3qszyef63nezett4mliva8ak48fx4', '113.167.214.150', '1663420765');
+(87, 'đặng long khánh', 'khanhhvjp20092@gmail.com', 'dlkkk', '538672e50d704e368ac070cbb4fb3ee98aadb2c4', '0', '0', '0', 'dk2qpj1eenirdt07ifuvqzh63q2rdfyh', '58q3qszyef63nezett4mliva8ak48fx4', '113.167.214.150', '1663420765'),
+(88, 'Ngu7227', 'hopnenha123@gmail.com', 'Okok09', '4833a142088a286942102e09f099af08ceb0c4ab', '0', '0', '0', 'eronwd190c74li18zpip06rp2h9nv4yd', 'zrb29sx2fho0mqy128ybthlphbza0p66', '14.255.147.160', '1663502853'),
+(89, 'Hợp nè', 'hophahaly123@gmail.com', 'Okok01', '9afabf474d5395261dca354cb0cdc7f2e0d44b69', '0', '0', '0', 'nciykavpuqwhax3ibefy9o0hq5lwa9sx', '36a82aj95u87dd4xmdd1nx2hwwfd3ax9', '14.255.147.160', '1663502879'),
+(90, 'khong anh quan', 'aquan8888@gmail.com', 'aquan8888', 'efb9614078bfc62229d4a7204ec6a4ce42361714', '0', '0', '0', 'z6amu91mks18v8codn6s2cdld32rm3z3', 'gu2wwxrtiq13mc35uvv6d7f8ruoe3ga1', '171.236.57.68', '1663508551'),
+(91, 'Thành Phát', '131545@gmail.com', 'thanhphat', '19a5ee2ffe9355a19c2792e4ea899552c14b71e5', '0', '0', '0', 'di3r1zm6q94jjclvolvjcu7ce02wrgsw', '2kscqt52ex2ggv2naugqpipg4dho0cw2', '58.186.236.128', '1663566809'),
+(92, 'gagaga', 'gagaga@gmail.com', 'gagaga', '601f1889667efaebb33b8c12572835da3f027f78', '0', '0', '0', '7ou7sh6xm4qs9en0ysdp6mpkrvlo23ia', 'lbsf6ft42xodfkxusyhpb08gtd4q4t2u', '2402:800:63ae:f250:20b7:6860:2c76:28be', '1663595066'),
+(93, 'TRUM IT', 'trumit@gmail.con', 'trumit', '4a9c18016090e344ecf65a9bec6bbf0c3360f85e', '0', '0', '0', 'ng4zvwluigoxxq81maom5pwsvyjdxxrs', 'tv3enirah0e2zcd90blgbjx10y1wmzw2', '2402:800:f689:f03c:1188:7593:e4ff:3b84', '1663636477'),
+(94, 'lichnguyen', 'tiaragosub@gmail.com', 'lichnguyen', '8b473e9aa0b8cef2a0f66e82cc168c702c5b5fd9', '0', '0', '0', 't0effmhqv74f8wjiwds1qyzegaak7dce', '0zbp7r3fl3d37d8ae1pxokt60plmlx0d', '14.191.155.142', '1663639814'),
+(95, 'đức anh', 'ducanhboy26@gmail.com', '0338904155', '22e2c58e2087db6e7a9c96d8b3cfeaaa2319bf54', '0', '0', '0', 'xly2agq7n4dlwqp5sz83l30ajhqzgstr', 'wrme06v3s2922zsuayoer7q8qyimrulc', '115.73.200.88', '1663700495');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -468,19 +489,19 @@ ALTER TABLE `card_user`
 -- AUTO_INCREMENT cho bảng `chat_user`
 --
 ALTER TABLE `chat_user`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3806;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3813;
 
 --
 -- AUTO_INCREMENT cho bảng `code_historys`
 --
 ALTER TABLE `code_historys`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 
 --
 -- AUTO_INCREMENT cho bảng `code_products`
 --
 ALTER TABLE `code_products`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=87;
 
 --
 -- AUTO_INCREMENT cho bảng `settings`
@@ -492,7 +513,7 @@ ALTER TABLE `settings`
 -- AUTO_INCREMENT cho bảng `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=88;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
