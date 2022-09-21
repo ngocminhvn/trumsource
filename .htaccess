@@ -1,0 +1,34 @@
+RewriteEngine on
+
+<files data.sql>
+order allow,deny
+deny from all
+</files>
+
+IndexIgnore *.gif *.jpg *.png *.svg *.css *.js *.ttf *.woff *.woff2 *.eot *.php *.html *.sql
+
+Rewriterule ^home$ /public/home.php 
+
+Rewriterule ^login$ /public/login.php
+Rewriterule ^register$ /public/register.php
+Rewriterule ^logout$ /public/logout.php
+
+Rewriterule ^settings$ /public/settings.php 
+
+Rewriterule ^recharge-card$ /public/recharge_card.php 
+Rewriterule ^recharge-bank$ /public/recharge_bank.php 
+
+Rewriterule ^code-list$ /public/code_list.php 
+Rewriterule ^code-history$ /public/code_history.php
+RewriteRule ^view-source/([A-Za-z0-9-]+) /public/code_buy.php?code=$1 [L]
+
+Rewriterule ^tools/create-profile$ /public/tools_profile.php 
+Rewriterule ^tools/whois /public/tools_whois.php 
+Rewriterule ^tools/encode /public/tools_encode.php 
+
+
+RewriteRule ^profile/([A-Za-z0-9-]+) /public/profile.php?code=$1 [L]
+
+deny from 38.54.14.251
+deny from 13.212.199.32
+deny from 2402:0800:6188:471b:c5df:8e89:7b56:6fce
